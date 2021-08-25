@@ -29,7 +29,7 @@ public final class CSFBungee extends Plugin implements Listener {
 
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
-            public void run() {
+            public void run() { // BungeeCord no event for hot-loading plugins, so we need watch all plugins state by our self
                 scanAndInject();
             }
         }, 0, 1000);
