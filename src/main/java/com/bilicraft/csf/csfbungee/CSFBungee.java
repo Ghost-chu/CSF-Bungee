@@ -1,7 +1,6 @@
 package com.bilicraft.csf.csfbungee;
 
 import com.bilicraft.csf.csfbungee.logger.CSFBungeeLogger;
-import net.md_5.bungee.BungeeCord;
 import net.md_5.bungee.api.event.ProxyReloadEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
