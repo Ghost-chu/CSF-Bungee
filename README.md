@@ -31,7 +31,7 @@ Messages-To-Hide-Filter:
 
 ## 关于重传
 
-该插件是我在 Bilicraft-Community 任职时编写的插件，起初是为了解决服务器怪物农场导致的 TPS 尖峰问题。  
+该插件是我在 Bilicraft-Community 任职时编写的插件，起初是为了解决服务器BungeeCord被CC攻击后大面积错误信息的问题。  
 在离开 Bilicraft 后我决定继续对其维护更新。
 
 ## 重传是否存在版权问题
