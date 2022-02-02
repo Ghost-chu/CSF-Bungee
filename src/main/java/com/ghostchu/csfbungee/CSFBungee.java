@@ -1,6 +1,6 @@
-package com.bilicraft.csf.csfbungee;
+package com.ghostchu.csfbungee;
 
-import com.bilicraft.csf.csfbungee.logger.CSFBungeeLogger;
+import com.ghostchu.csfbungee.logger.CSFBungeeLogger;
 import net.md_5.bungee.api.event.ProxyReloadEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
@@ -17,7 +17,6 @@ public final class CSFBungee extends Plugin implements Listener {
         // Plugin startup logic
         getLogger().info("Starting up...");
         getLogger().info("Please do not go and ask brunyman to support this. This plugin has no affiliation with brunyman.");
-        getLogger().info("CSFBungee - Powered by Bilicraft Community");
         getLogger().info("Please wait... Logger filter injecting...");
         replaceLogger = new CSFBungeeLogger(this);
         replaceLogger.reloadConfig();

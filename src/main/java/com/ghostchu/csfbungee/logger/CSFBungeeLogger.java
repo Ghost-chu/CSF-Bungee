@@ -1,6 +1,6 @@
-package com.bilicraft.csf.csfbungee.logger;
+package com.ghostchu.csfbungee.logger;
 
-import com.bilicraft.csf.csfbungee.CSFBungee;
+import com.ghostchu.csfbungee.CSFBungee;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
@@ -62,6 +62,10 @@ public class CSFBungeeLogger implements Filter {
         }
     }
 
+    /**
+     * Inject our filter logger into any logger
+     * @param logger logger
+     */
     public void inject(Logger logger){
         if(logger.getFilter() != this && logger != plugin.getLogger()) {
             logger.setFilter(this);

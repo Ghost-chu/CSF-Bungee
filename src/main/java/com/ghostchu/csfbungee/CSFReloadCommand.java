@@ -1,4 +1,4 @@
-package com.bilicraft.csf.csfbungee;
+package com.ghostchu.csfbungee;
 
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.TextComponent;

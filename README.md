@@ -1,3 +1,13 @@
+# CSF-Bungee
+ConsoleSpamFix for BungeeCord.
+
+## Features
+- Filter for both BungeeCord and Plugin logger.
+- Regex & Contains two modes support
+
+## Configuration
+
+```yaml
 #Add here the messages you want to hide from your console and logs.
 #Each line represents a new message.
 #NOTE! You don't need to add the full message!
@@ -17,3 +27,14 @@ Messages-To-Hide-Filter:
   - 'look up profile properties for'
   - 'InitialHandler - NativeIoException: readAddress(..) failed: Connection reset by peer'
   - 'Unexpected packet received during login process'
+```
+
+## 关于重传
+
+该插件是我在 Bilicraft-Community 任职时编写的插件，起初是为了解决服务器怪物农场导致的 TPS 尖峰问题。  
+在离开 Bilicraft 后我决定继续对其维护更新。
+
+## 重传是否存在版权问题
+
+不存在，本插件 100% 由我个人编写，没有任何版权问题。  
+同时，在认知期间 Bilicraft 并未向我支付任何劳动报酬，因此也不存在任何的风险。
