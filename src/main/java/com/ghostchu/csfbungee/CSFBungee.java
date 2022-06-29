@@ -1,7 +1,6 @@
 package com.ghostchu.csfbungee;
 
 import com.ghostchu.csfbungee.logger.CSFBungeeLogger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 import net.md_5.bungee.api.event.ProxyReloadEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
