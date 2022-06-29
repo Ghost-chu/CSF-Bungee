@@ -1,6 +1,7 @@
 package com.ghostchu.csfbungee;
 
 import com.ghostchu.csfbungee.logger.CSFBungeeLogger;
+import com.sun.org.slf4j.internal.LoggerFactory;
 import net.md_5.bungee.api.event.ProxyReloadEvent;
 import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.api.plugin.Plugin;
@@ -17,15 +18,13 @@ public final class CSFBungee extends Plugin implements Listener {
         // Plugin startup logic
         getLogger().info("Starting up...");
         getLogger().info("Please do not go and ask brunyman to support this. This plugin has no affiliation with brunyman.");
+        getProxy().getPluginManager().registerCommand(this,new CSFReloadCommand(this));
         getLogger().info("Please wait... Logger filter injecting...");
         replaceLogger = new CSFBungeeLogger(this);
         replaceLogger.reloadConfig();
-
         getProxy().getPluginManager().registerListener(this,this);
         replaceLogger.inject(getLogger());
-
         scanAndInject();
-
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() { // BungeeCord no event for hot-loading plugins, so we need watch all plugins state by our self
