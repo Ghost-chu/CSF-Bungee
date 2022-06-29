@@ -1,6 +1,8 @@
 # CSF-Bungee
 ConsoleSpamFix for BungeeCord.
 
+[SpigotMC](https://www.spigotmc.org/resources/95657)
+
 ## Features
 - Filter for both BungeeCord and Plugin logger.
 - Regex & Contains two modes support
